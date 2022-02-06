@@ -1,0 +1,250 @@
+header {
+  position: fixed;
+  z-index: 9999;
+  top: 10px;
+  left: 10px;
+  width: 100%;
+  padding: 20px 40px;
+  font-size: 2rem;
+  font-weight: 800;
+  color: rgb(37, 37, 37);
+}
+.my-img {
+  margin: 100px 100px 80px 100px;
+}
+.name {
+  position: absolute;
+  left: 70px;
+  top: 500px;
+  font-size: 3vw; /* ディスプレイ幅の3% */
+  width: 30%;
+  color: rgb(37, 37, 37);
+  border-bottom: 2px solid rgb(37, 37, 37);
+}
+.name::first-letter {
+  color: rgb(145, 106, 0);
+}
+span {
+  position: absolute;
+  white-space: nowrap; /* 改行しない */
+  font-size: 2vw;
+  color: rgb(37, 37, 37);
+}
+.me {
+  width: 100%;
+  height: 520px;
+  object-fit: cover; /* 縦横比を維持したまま */
+}
+
+.scAni {
+  opacity: 0;
+  transition: all 0.8s ease;
+}
+.scAni.show {
+  opacity: 1;
+  transform: none;
+}
+.scAni--up {
+  transform: translate(0, 100px);
+}
+
+/* About -----------------------------------------------*/
+
+.about::first-letter {
+  font-size: 9vw;
+  color: rgb(145, 0, 0);
+}
+.aboutMe-img {
+  width: 55%;
+  height: auto;
+  object-fit: cover;
+  margin-left: 10px;
+}
+.aboutMe {
+  position: absolute;
+  top: 750px;
+  right: 100px;
+  left: 40%;
+}
+.about {
+  font-size: 5vw;
+  color: rgb(37, 37, 37);
+}
+.about-container {
+  margin-left: 85px;
+  font-size: 1.2vw;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+.born {
+  margin-top: 30px;
+}
+.food {
+  margin-top: 20px;
+}
+.hobby {
+  margin-top: 20px;
+}
+
+/* Snowboad -----------------------------------------------*/
+
+.snowboard::first-letter {
+  font-size: 9vw;
+  color: rgb(0, 140, 145);
+}
+.snowboardMe {
+  position: relative;
+  margin: 40px 40px 0px 40px;
+}
+.snowboard-container {
+  position: absolute;
+  top: 20px;
+  left: 0px;
+}
+.snowboard {
+  font-size: 5vw;
+  color: rgb(37, 37, 37);
+}
+.snowboardLife {
+  margin-left: 45px;
+  width: 60%;
+  font-size: 1.2vw;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+.snowboardImg {
+  margin: 0px 100px 0px 100px;
+}
+.snowboard-img {
+  margin-top: 30px;
+  width: 100%;
+  height: 450px;
+  object-fit: cover;
+}
+
+/* Manga -----------------------------------------------*/
+
+.manga-container {
+  position: absolute;
+  top: 20px;
+  left: 5%;
+}
+.mangaMe {
+  position: relative;
+  margin: 40px 40px 0px 40px;
+}
+.manga {
+  font-size: 5vw;
+  color: rgb(37, 37, 37);
+}
+.manga::first-letter {
+  font-size: 9vw;
+  color: rgb(77, 145, 0);
+}
+.favoriteManga {
+  margin-left: 10%;
+  width: 100%;
+  font-size: 1.2vw;
+}
+.anime {
+  margin-left: 10px;
+}
+.manga-img {
+  margin-top: 50px;
+  width: 50%;
+  height: auto;
+  object-fit: cover;
+  margin-left: 45%;
+}
+
+a {
+  display: inline-block;
+  position: relative;
+  overflow: hidden;
+  color: black;
+  text-decoration: none;
+}
+a:after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background-color: black;
+  transform: translate(-100%, 0);
+  transition: transform cubic-bezier(0.215, 0.61, 0.355, 1) 0.4s;
+  content: "";
+}
+a:hover:after {
+  transform: translate(0, 0);
+}
+li {
+  list-style: none;
+  margin: 10px 0;
+}
+
+/* Music -----------------------------------------------*/
+
+.musicMe {
+  position: relative;
+  margin: 40px 40px 0px 40px;
+}
+.music-container {
+  position: absolute;
+  left: 43.3%;
+}
+.music {
+  font-size: 4vw;
+  color: rgb(37, 37, 37);
+}
+.favoriteMusic {
+  margin-left: 60%;
+  font-size: 1.2vw;
+}
+.music::first-letter {
+  font-size: 7vw;
+  color: #fff;
+}
+.music-img {
+  width: 40%;
+  height: auto;
+  object-fit: cover;
+  margin-left: 10%;
+}
+
+/* Footer -----------------------------------------------*/
+
+footer {
+  width: 100%;
+  height: 200px;
+  margin-top: 100px;
+  background-color: rgb(37, 37, 37);
+}
+.lastName {
+  text-align: center;
+  margin-top: 40px;
+  color: #fff;
+  font-size: 10px;
+}
+
+/* SNS -----------------------------------------------*/
+
+.sns {
+  position: relative;
+  padding-top: 45px;
+  text-align: center;
+}
+.instagram {
+  position: absolute;
+  margin-left: 0.5%;
+  bottom: 7%;
+  font-size: 1.2vw;
+  color: #fff;
+}
+.instagram:after {
+  background-color: #fff;
+}
+.insta-img {
+  width: 2%;
+  height: auto;
+  margin-left: -6%;
+  filter: brightness(1) invert(1);
+}
